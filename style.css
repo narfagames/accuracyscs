@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none ;
+}
+.ani1{animation: blur-in-expand 1s;}
+@keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
+.ani2{animation:scale-up-center 0.4s; } 
+@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+
+.blur-in{animation:blur-in 0.4s linear both} 
+@keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+@font-face
+{
+    font-family: outfit;
+    src: url(fonts/Outfit-Light.ttf);
+}
+@font-face
+{
+    font-family: outfitNegrita;
+    src: url(fonts/Outfit-Black.ttf);
+}
+body
+{
+    background-color: white;
+}
+
+header
+{
+    width: 100%;
+    height: auto;
+    padding: 10px 200px;
+    background-color:#00365f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    
+}
+.logoAccuracy
+{
+    width: auto;
+    height: 40px;
+    
+}
+.iconosws
+{
+    width: auto;
+    height: 30pX;
+    vertical-align: middle;
+    align-items: center;
+}
+.iconosmail
+{
+    width: auto;
+    height: 18PX;
+    vertical-align: middle;
+    align-items: center;
+}
+.navbar
+{
+    width: auto;
+    height: 40px;
+    padding: 5px 0px;
+}
+
+.navbar a
+{
+    font-family: outfit;
+    font-size: 18px;
+    padding: 0px 30px;
+    color:#ffffff;
+}
+.btnFlotante
+{
+    width: auto;
+    height: 50px;
+}
+.fondoAlmacen
+{
+    width: auto;
+    height: 600px;
+    background-image:url(imagenes/fondo_almacen.png);
+    background-size: 100% 90%;
+    background-attachment: fixed;
+    display: flex;
+}
+.iconoFlotante
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+.cuerpo p
+{
+    font-family: outfitNegrita;
+    font-size: 50px;
+    text-align: center;
+    padding: 30px 30px;
+    color:#919191;
+
+}
+.cuerpo h1
+{
+    font-family: outfit;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 250px;
+    color:#a8a8a8;
+
+}
+.servicios
+{
+    width: auto;
+    height: 300px;
+    display:grid;
+    justify-content: center;
+}
+.serviBox
+{
+    background-color: #919191;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    margin: 10PX;
+    justify-content: center;
+    align-items: center;
+}
+.serviBox a
+{
+    font-family: outfitNegrita;
+    font-size: 25px;
+    color:white;
+}
+.PMS
+{
+    grid-row: 1;
+    grid-column: 1;
+}
+.WMS
+{
+    grid-row: 1;
+    grid-column: 2;
+}
+.TMS
+{
+    grid-row: 1;
+    grid-column: 3;
+}
