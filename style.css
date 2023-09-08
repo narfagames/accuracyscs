@@ -162,6 +162,11 @@ header
     font-size: 25px;
     color:white;
 }
+.serviBox:hover
+{
+    animation:blur-in 0.4s linear both;
+    background-color: #00365f;
+}
 .PMS
 {
     grid-row: 1;
@@ -176,5 +181,26 @@ header
 {
     grid-row: 1;
     grid-column: 3;
+}
+.EMS
+{
+    grid-row: 2;
+    grid-column: 1;
+}
+.KMS
+{
+    grid-row: 2;
+    grid-column: 2;
+}
+.ZMS
+{
+    grid-row: 2;
+    grid-column: 3;
+}
+.blanco
+{
+    font-family: outfitNegrita;
+    font-size: 25px;
+    color: white;
 }
 
