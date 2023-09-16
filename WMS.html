@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Accuracy SCS</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
     
 
@@ -22,53 +23,67 @@
 <div>
 <br />
 <br />
-  <a href="WMS.html"><img class="portadas" src="imagenes/WMS.png"></a>
+  <img class="portadas" src="imagenes/WMS.png" alt="">
 
 </div>
-</nav>
-
-<a name="TMS"></a>
-<nav id="SISTEMADEGESTIONDEALMACENESWMS" >
-<div class="titulo">
-    <a class="titulo">Sistema de Gestión de Transporte (TMS)</a>
+<div class="iconWMS">
+  <br />
+<br />
+  <img src="imagenes/EXPERIENCIA INIGUALABLE.png" alt="">
+  <img src="imagenes/FLEXIBILIDAD Y ADAPTABILIDAD.png" alt="">
+  <img src="imagenes/FORMACION SOPORTE CONTINUO.png" alt="">
+  <img src="imagenes/SOLUCION INTEGRAL.png" alt="">
 </div>
-
 <div>
-<br />
-<br />
-  <img class="portadas" src="imagenes/TMS.png" alt="">
+  <img class="portadas" src="imagenes/WMS1.png" alt="">
+</div>
+<div class="botones">
+  <button id="btn-port-recibo" class="active">
+    <div class="btn">Recibo</div>
+  </button>
+  <button id="btn-port-put-away" class="inactive">
+    <div class="btn">Put-Away</div>
+  </button>
+  <button id="btn-port-picking" class="inactive">
+    <div class="btn">Picking</div>
+  </button>
+  <button id="btn-port-chequeo-y-embalaje" class="inactive">
+    <div class="btn">Chequeo y embalaje</div>
+  </button>
+  <button id="btn-port-shipping" class="inactive">
+    <div class="btn">Shipping</div>
+  </button>
+  <button id="btn-port-inventarios" class="inactive">
+    <div class="btn">Inventarios</div>
+  </button>
+  <button id="btn-port-otros" class="inactive">
+    <div class="btn">Otros</div>
+  </button>
+  <div id="img-port-recibo" class="show">
+    <img class="portadasWMS" src="imagenes/wmsRecepcion.png" alt="">
+  </div>
+  <div id="img-port-put-away" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsPutaway.png" alt="">
+  </div>
+  <div id="img-port-picking" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsPicking.png" alt="">
+  </div>
+  <div id="img-port-chequeo-y-embalaje" class="hide">
+    <img class="portadasWMS" src="imagenes/WMSCchequeo.png" alt="">
+  </div>
+  <div id="img-port-shipping" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsShipping.png" alt="">
+  </div>
+  <div id="img-port-inventarios" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsInventarios.png" alt="">
+  </div>
+  <div id="img-port-otros" class="hide">
+    <img class="portadasWMS" src="imagenes/wmsOtros.png" alt="">
+  </div>
 
 </div>
 </nav>
-
-<a name="SCP"></a>
-<nav id="SISTEMADEGESTIONDEALMACENESWMS" >
-<div class="titulo">
-    <a class="titulo">Sistema de Planeación de Cadena de Suministros</a>
-</div>
-
-<div>
-<br />
-<br />
-  <img class="portadas" src="imagenes/SCP.png" alt="">
-
-</div>
-</nav>
-
-<a name="VP"></a>
-<nav id="SISTEMADEGESTIONDEALMACENESWMS" >
-<div class="titulo">
-    <a class="titulo">Voice Picking</a>
-</div>
-
-<div>
-<br />
-<br />
-  <img class="portadas" src="imagenes/voicePicking.png" alt="">
-
-</div>
-</nav>
-
+<script src="script.js"></script>
 </body>
 
 
@@ -99,7 +114,7 @@
       </div>
     </div>
 
-    <div class="dropdown tamañogrande">
+    <!-- <div class="dropdown tamañogrande">
       <button class="dropbtn">Equipamiento logístico
         <i class="fa fa-caret-down"></i>
       </button>
@@ -109,7 +124,7 @@
         <a href="#">Equipos RFID</a>
         <a href="#">Impresoras y suministros</a>
       </div>
-    </div>
+    </div> -->
 
     <div class="dropdown tamañogrande">
       <button class="dropbtn">About Us

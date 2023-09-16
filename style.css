@@ -13,6 +13,10 @@
 
 .blur-in{animation:blur-in 0.4s linear both} 
 @keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.vibrate{animation:vibrate 1.5s linear both} 
+@keyframes vibrate{0%{transform:translate(0)}30%{transform:translate(-2px,2px)}70%{transform:translate(2px,2px)}100%{transform:translate(0)}}
+
 @font-face
 {
     font-family: outfit;
@@ -283,3 +287,59 @@ body
     width: 100%;
     height: auto;
   }
+  .portadasWMS
+  {
+    animation:vibrate 0.1s linear both;
+    width: 100%;
+    height: auto;
+  }
+
+.iconWMS img
+{
+width: auto;
+height: 200px;
+margin: 3.%;
+}
+
+.botones
+{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5% 0% 0% 0%;
+  background-color: #e3edff
+}
+
+.botones > a,
+.botones > button
+{
+  padding: 1.5% 3%;
+  width:auto;
+  height: auto  ;
+  margin: 0% 1% ;
+  border:none;
+  font-family: outfit;
+  font-size: 15px;
+  border-radius: 15px 15px 0px 0px;
+}
+.botones > button:hover
+{
+  background-color: #a5d0f0;
+  color: #ffffff; 
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+.active {
+  background-color: #a5d0f0;
+  color: #ffffff; 
+}
+
+.inactive {
+  background-color: #e3edff;
+  color: #00365f; 
+}
