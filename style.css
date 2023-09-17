@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none ;
+}
+.ani1{animation: blur-in-expand 1s;}
+@keyframes blur-in-expand{0%{transform:scale(0);filter:blur(12px);opacity:0}100%{transform:scale(1);filter:blur(0);opacity:1}}
+
+.ani2{animation:scale-up-center 0.4s; } 
+@keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+
+.blur-in{animation:blur-in 0.4s linear both} 
+@keyframes blur-in{0%{filter:blur(12px);opacity:0}100%{filter:blur(0);opacity:1}}
+
+.vibrate{animation:vibrate 1.5s linear both} 
+@keyframes vibrate{0%{transform:translate(0)}30%{transform:translate(-2px,2px)}70%{transform:translate(2px,2px)}100%{transform:translate(0)}}
+
+@font-face
+{
+    font-family: outfit;
+    src: url(fonts/Outfit-Light.ttf);
+}
+@font-face
+{
+    font-family: outfitNegrita;
+    src: url(fonts/Outfit-Black.ttf);
+}
+@font-face
+{
+    font-family: outfitBlack;
+    src: url(fonts/Outfit-Regular.ttf);
+}
+body
+{
+    background-color: rgb(255, 255, 255);
+    display: grid;
+}
+    header
+{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    background-color:#00365f;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    position: fixed;
+    padding:0.8%;
+    
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+.logoAccuracy
+{
+    width: auto;
+    height: 40px;
+    
+}
+.iconosws
+{
+    width: 90px;
+    height: auto;
+    vertical-align: middle;
+}
+.iconosNavBar
+{
+  display: flex;
+  justify-content: center;
+}
+.iconosmail > a > img
+{
+
+display: flex;
+flex-direction: column;
+
+}
+.btnFlotante
+{
+    width: auto;
+    height: 50px;
+}
+.fondoAlmacen
+{
+    width: auto;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imagenes/fondo_almacen.png);
+    background-size: 100% 90%;
+    background-attachment: fixed;
+    display: flex;
+
+}
+.iconoFlotante
+{
+    width: auto;
+    height: auto;
+    margin: auto;
+}
+.cuerpo p
+{
+    font-family: outfitNegrita;
+    font-size: 50px;
+    text-align: center;
+    padding: 2.5% 8%;
+    color:#919191;
+
+}
+.cuerpo h1
+{
+    font-family: outfit;
+    font-size: 25px;
+    text-align: center;
+    padding: 2.5% 8%;
+    color:#a8a8a8;
+
+}
+.titulo
+{
+
+    margin: 0.1%;
+    background: linear-gradient(90deg,#478cc0 39%, #ffffff 96%);
+    padding: 0.5%;
+}
+.titulo a{
+    background: none;
+    font-family: outfit;
+    font-size: 20px;
+    color: white;
+}
+  
+  /* Dropdown container - needed to position the dropdown content */
+  .dropdown {
+    text-align: center;
+    float: left ;
+  }
+  .tamañogrande
+  {
+    width: 250px;
+  }
+
+  
+  /* Style the dropdown button to fit inside the topnav */
+  .dropdown .dropbtn {
+     font-family: outfit;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 2%;
+    background-color: inherit;
+    margin: 0;
+    border-radius: 10px;
+  }
+  
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+    margin: 0.1%;
+  }
+  
+  /* Style the links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a dark background on topnav links and the dropdown button on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    animation: blur-in-expand 0.1s;
+    background-color: #f8f8f8;
+    color: #00365f;
+  }
+  
+  /* Add a grey background to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #a9daff;
+    color: #00365f;
+    border-radius: 10px;
+  }
+  
+  /* Show the dropdown menu when the user moves the mouse over the dropdown button */
+  .dropdown:hover .dropdown-content {
+    animation: blur-in-expand 0.1s;
+    display: block;
+  }
+  
+  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child), .dropdown .dropbtn {
+      display: none;
+    }
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 600px) {
+    .navbar.responsive {position: relative;}
+    .navbar.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .navbar.responsive .dropdown {float: none;}
+    .navbar.responsive .dropdown-content {position: relative;}
+    .navbar.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+#CONSULTORIALOGISTICA
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 1% 15%;
+}
+#CONSULTORIALOGISTICA > div 
+{
+    width: 50%;
+}
+
+  .consultoriaLog
+  {
+    padding: 1% 0%;
+    animation:blur-in 0.8s linear both
+
+  }
+  .consultoriaLog img
+  {
+    width: 80px;
+    height: auto;
+    float: left;
+    margin: 1%;    
+  }
+  .consultoriaLog p
+  {
+    font-family: outfitBlack;
+    color: #3d3d3d;
+    padding: 5%;
+    font-size: 20px;
+  }
+  #SISTEMADEGESTIONDEALMACENESWMS
+  {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5% 15%;
+  }
+  #SISTEMADEGESTIONDEALMACENESWMS > div 
+  {
+      width: 90%;
+  }
+
+  .portadas
+  {
+    animation:scale-up-center 0.7s; 
+    width: 100%;
+    height: auto;
+  }
+  .portadasWMS
+  {
+    animation:vibrate 0.1s linear both;
+    width: 100%;
+    height: auto;
+  }
+
+.iconWMS img
+{
+width: auto;
+height: 200px;
+margin: 1%;
+align-content: center;
+}
+
+.botones
+{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin: 5% 0% 0% 0%;  
+}
+
+.botones > a,
+.botones > button
+{
+  padding: 1.5% 2%;
+  width:auto;
+  height: auto  ;
+  border:none;
+  font-family: outfit;
+  font-size: 18px;
+  border-radius: 15px;
+  margin: 1% -5%;
+}
+.botones > button:hover
+{
+  background-color: #a5d0f0;
+  color: #ffffff; 
+}
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+.active {
+  background-color: #a5d0f0;
+  color: #ffffff; 
+}
+
+.inactive {
+  background-color: #e3edff;
+  color: #00365f; 
+}
+.textos
+{
+  margin: 1%;
+}
+.textos >h1
+{
+font-family: outfitBlack;
+color: #00365f;
+font-size: 22px;
+}
+.textos >h2
+{
+font-family: outfit;
+color: #00365f;
+font-size: 18px;
+margin: 4px;
+}
+.clientes
+{
+  display: flex;
+  justify-content: space-evenly;
+}
+.clientes > img
+{
+  width: 16%;
+  height: auto;
+}
