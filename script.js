@@ -79,14 +79,14 @@ function addClassHideShow(index) {
         }
     }
 }
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function abrirMenu() {
+    document.getElementById("mdd").classList.add("show");
   }
   
   // Close the dropdown menu if the user clicks outside of it
   window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
+    if (!event.target.matches('.dropbtn2')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content2");
       var i;
       for (i = 0; i < dropdowns.length; i++) {
         var openDropdown = dropdowns[i];
