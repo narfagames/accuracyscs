@@ -460,6 +460,36 @@ padding: 3% 0 0 6%;
   width: 100%;
   height: auto;
 }
+#CONSULTORIALOGISTICA > div 
+{
+    width: 90%;
+}
+
+  .consultoriaLog
+  {
+    animation:blur-in 0.8s linear both;
+
+  }
+  .consultoriaLog img
+  {
+    width: 60px;
+    height: auto;
+    float: left;
+    margin: 0 1%;
+    padding: 0 5%;  
+  }
+  .consultoriaLog p
+  {
+    font-family: outfitBlack;
+    color: #3d3d3d;
+    font-size: 18px;
+    padding: 5%;
+  }
+  .consultoriaLog a
+  {
+    width: 100%;
+  }
+
 #CONSULTORIALOGISTICA .titulo
 {
 padding: 40% 5% 10% 0;
