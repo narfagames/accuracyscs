@@ -35,7 +35,6 @@
 header
 {
     width: 100%;
-    height: auto;
     background-color:#00365f;
     display: flex;
     flex-direction: column;
@@ -85,7 +84,6 @@ flex-direction: column;
 }
 
 
-
 /* PANTALLA PC */
   @media screen and (min-width: 700px) {
      .dropdown2 .dropbtn2 {
@@ -115,8 +113,8 @@ display: none;
 {
     background-color: rgb(255, 255, 255);
     display: grid;
-    justify-content: center;
     width: 100%;
+    height: auto;
 }
 .fondoAlmacen
 {
@@ -271,6 +269,7 @@ display: none;
   #SISTEMADEGESTIONDEALMACENESWMS > div 
   {
       width: 90%;
+      height: auto;
   }
 
   .portadas
@@ -370,6 +369,18 @@ margin: 4px;
 .clientes > img
 {
   width: 16%;
+  height: auto;
+}
+.beneficios
+{
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.beneficios > img
+{
+  width: 17%;
+  margin: 2% 3%;
   height: auto;
 }
 }
@@ -522,6 +533,10 @@ text-align: center;
 {
   display: none;
 }
+.diferenciadores
+{
+  display: none;
+}
 .portadasMobile
 {
   width: 100%;
@@ -561,6 +576,18 @@ text-align: center;
     {
       display: none;
     }
+    .beneficios
+{
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.beneficios > img
+{
+  width: 28%;
+  margin: 2% 1.5%;
+  height: auto;
+}
   }
   /*FIN MOBILE*/
 .dropbtn2 {
