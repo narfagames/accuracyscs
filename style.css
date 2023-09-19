@@ -448,13 +448,17 @@ padding: 3% 0 0 6%;
   color: #00365f;
   text-align: center;
 }
-.textos
+.textos > h1
 {
   font-family: outfit;
-  font-size: 13px;
-  color: #758c98;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #758c98;
+  padding: 2%;
+  margin: -2%;
+}
 
-} 
+ 
 .organigrama
 {
   width: 100%;
