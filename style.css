@@ -42,6 +42,7 @@ header
     justify-content:space-between;
     position: fixed;
     padding:0.8% 0.8% 0.2% 0.8%;
+    z-index: 1;
     
 }
 .btnFlotante
@@ -140,7 +141,7 @@ display: none;
 .cuerpo p
 {
     font-family: outfitNegrita;
-    font-size: 50px;
+    font-size: 45px;
     text-align: center;
     padding: 2.5% 8%;
     color:#758c98;
@@ -149,9 +150,9 @@ display: none;
 .cuerpo h1
 {
     font-family: outfit;
-    font-size: 25px;
+    font-size: 22px;
     text-align: center;
-    padding: 2.5% 8%;
+    padding: 1% 8%;
     color:#758c98;
 
 }
@@ -165,7 +166,7 @@ display: none;
 .titulo a{
     background: none;
     font-family: outfit;
-    font-size: 30px;
+    font-size: 27px;
     color: white;
 }
   
@@ -181,7 +182,7 @@ display: none;
   
   .dropdown .dropbtn {
      font-family: outfit;
-     font-size: 22px;
+     font-size: 21px;
     border: none;
     outline: none;
     color: white;
@@ -193,7 +194,7 @@ display: none;
   
   .dropdown-content {
     display: none;
-    font-size: 18px;
+    font-size: 17px;
     position: absolute;
     background-color: #f8f8f8;
     min-width: 160px;
@@ -233,8 +234,8 @@ display: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 1% 15%;
-    z-index: -1;
+    margin: 1% 20%;
+
 }
 #CONSULTORIALOGISTICA > div 
 {
@@ -259,13 +260,13 @@ display: none;
     font-family: outfitBlack;
     color: #3d3d3d;
     padding: 5%;
-    font-size: 25px;
+    font-size: 20px;
   }
   #SISTEMADEGESTIONDEALMACENESWMS
   {
       display: flex;
       flex-wrap: wrap;
-      margin: 5% 15%;
+      margin: 5% 20%;
   }
   #SISTEMADEGESTIONDEALMACENESWMS > div 
   {
@@ -278,6 +279,13 @@ display: none;
     width: 100%;
     height: auto;
     margin: 1%;
+  }
+  .diferenciadores
+  {
+    animation:scale-up-center 0.7s; 
+    width: 70%;
+    height: auto;
+    margin: 1% 8%;
   }
   .portadasWMS
   {
@@ -310,7 +318,7 @@ align-content: center;
   height: auto  ;
   border:none;
   font-family: outfit;
-  font-size: 18px;
+  font-size: 16px;
   border-radius: 15px;
   margin: 1% -5%;
 }
@@ -343,13 +351,15 @@ align-content: center;
 {
 font-family: outfitBlack;
 color: #00365f;
-font-size: 25px;
+font-size: 22px;
+background-color: rgb(192, 211, 243);
+border-style:outset;
 }
 .textos >h2
 {
 font-family: outfit;
 color: #00365f;
-font-size: 23px;
+font-size: 20px;
 margin: 4px;
 }
 .clientes
@@ -410,7 +420,7 @@ padding: 3% 0 0 6%;
     .cuerpo >p
     {
       font-family: outfitNegrita;
-      font-size: 25px;
+      font-size: 23px;
       color: #00365f;
       text-align: center;
     }
