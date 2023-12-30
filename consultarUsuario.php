@@ -6,7 +6,7 @@ $db = "bljvi8izdfsqurtiwlnz";
 
 $connect = new mysqli($server,$username,$password,$db);
         $USUARIO = 'nruiz';
-        $result = mysqli_query($connect,"SELECT * FROM T_M_USER WHERE usuario='$USUARIO'");
+        $result = mysqli_query($connect,"SELECT * FROM T_M_USER WHERE user='$USUARIO'");
         $qCol= mysqli_field_count($connect);
     echo $qCol."!";
 
